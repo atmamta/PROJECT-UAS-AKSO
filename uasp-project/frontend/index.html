@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Library Management</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Library Management System</h1>
+      <p>Enter your details to join the library database.</p>
+    </header>
+    <main>
+      <form action="/submit.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" name="nim" placeholder="Enter your NIM" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="program">Program Studi</label>
+          <select id="program" name="program" required>
+            <option value="">-- Pilih Program Studi --</option>
+            <option value="informatika">Informatika</option>
+            <option value="teknik_sipil">Teknik Sipil</option>
+            <option value="teknik_elektro">Teknik Elektro</option>
+            <option value="manajemen">Manajemen</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>© 2024 Library Management. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group input:focus, .form-group select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
+</body>
+</html>
